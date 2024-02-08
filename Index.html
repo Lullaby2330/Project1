@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UI&UX DESIGN DEVELOPER</title>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alumni+Sans+Collegiate+One&family=Barlow+Condensed:wght@500&family=Freckle+Face&family=Heebo:wght@100;200&family=IBM+Plex+Sans:wght@100&family=Lato:wght@700&family=Nosifer&display=swap"rel="stylesheet">
+<!--link tailwind-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <head>
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          top: 0;
+        }
+        /*control all
+        .control-all {
+          margin-top: -280px;
+        }*/
+        .container {
+          background-color: blueviolet;
+          width: 100%;
+       display: flex;
+          align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        }
+        /*control icon*/
+        .lynn {
+          display: flex;
+        }
+        #name {
+          display: flex;
+          flex-direction: reverse;
+          margin: 0 0 0 10px;
+         color: white;
+         font-size: 20px;
+         font-family: Agbalumo;
+         align-items: center;
+        }
+        .fuki {
+          width: 25px;
+          height: 25px;
+          margin: 0 10px 0 0;
+        }
+        .jul {
+          width: 25px;
+          height: 25px;
+        }
+       #menubar{
+         list-style: none;
+         display: grid;
+         justify-content: flex-end;
+         align-items: center;
+         background-color: lavender;
+        width: 100%;
+         height: 100vh;
+         transform: translateX(100%);
+         position: fixed;
+         transition: 0.3 east-in-out;
+       }
+       li {
+         list-style: none;
+         border: 1px solid transparent;
+         height: 40px;
+         width: 140px;
+         display: grid;
+         align-items: center;
+         justify-content: center;
+         background-color: white;
+         border-radius: 7px;
+         font-family: Agbalumo;
+       }
+
+      .tombol {
+      top: -1px;
+        position: fixed;
+        margin: 0 0 0 130px;
+      }
+      #iya {
+       position: fixed;
+       z-index: 5;
+    right: 0;
+    top: 20px;
+    opacity: 0;
+      }
+      #iya:checked +
+      #menubar{
+transform: translateX(50%);
+      }
+          .rull {
+        height: 30px;
+        width: 30px;
+      }
+       li:hover {
+         background-color: blueviolet;
+         color: white;
+       }
+       li:active {
+         color: rgb(225,76,220);
+       }
+       ul.seting {
+         border: 1px solid transparent;
+         justify-content: center;
+         position: absolute;
+         left: 50px;
+         display: grid;
+         border-radius: 10px;
+         top: 20%;
+       }
+       a {
+         text-decoration: none;
+         color: black;
+       }
+       .seting >li{
+         margin: 15px 0 15px 0;
+       display: grid;
+      width: 140%;
+       }
+       /*home*/
+       .home {
+         margin: 200px 0px 0 0;
+         display: flex;
+         justify-content: center;
+         font-size: 26px;
+         font-family: Times new roman;
+         border-block-end-width: 10px solid blue;
+       }
+       /*seting img*/
+       #conimg {
+         display: flex;
+         justify-content: center;
+         margin: 10px 5px 0 0;
+       }
+       .zy {
+         height: 200px;
+         width: 200px;
+         border-radius: 10px;
+         box-shadow: 2px 2px 2px rgb(225,76,220);
+       }
+       .desc {
+         font-size: 15px;
+         font-family: Times new roman;
+         margin: 30px 0 0 10px;
+       }
+       .tail {
+         margin: 100px 0 0 0;
+       }
+       /*control warna*/
+       #warna {
+         background-color: lavender;
+         padding: 100px 0 400px 0;
+       }
+      </style>
+      </head>
+      <body>
+        <!--bagian navbar-->
+        <!--control-->
+        <div class="control-all">
+       <div class="container">
+       <div id="name">Lullaby23</div>
+       <div class="lynn">
+<img src="https://img.icons8.com/metro/ffffff/search.png" class="fuki"/>
+<img src="https://img.icons8.com/dotty/ffffff/menu--v2.png" class="jul"/>
+       </div>
+       </div>
+       <!--bagian muncul animasi ketika klik hamburger-->
+<input type="checkbox" id="iya">
+<!--bagian menu-->
+       <div id="menubar">
+         <ul class="seting">
+           <div class="tombol"><img src="https://img.icons8.com/laces/64/blue/x.png" class="rull"/>
+           </div>
+           <li class="satu">Home</li>
+           <li class="dua">Blog</li>
+           <li class="tiga">Film movie</li>
+           <li claas="empat">Portofolio</li>
+         </ul>
+       </div>
+       <!--home-->
+         <!--control color-->
+         <div id="warna">
+       <div class="home">
+         Hallo,I'am Lintar^^
+       </div>
+       <!--pengatur img and desc-->
+       <div id="conimg">
+<img src="https://i.ibb.co/xgKkHTP/20240124-204031.jpg" class="zy">
+</div>
+<div class="desc">
+ Hello, let me introduce myself as someone who is currently studying in the field of frontend developer, and I hope I can become a skilled web developer. For that reason, I started studying things related to that field
+ </div>
+ </div>
+ </div>
+ <!--control body end--->
+ <!-- control isi my blog-->
+ <div id="con-blog">
+   <div id="myblog">
+     
+   </div>
+ </div>
+  </body>
