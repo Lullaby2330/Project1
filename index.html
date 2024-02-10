@@ -19,13 +19,15 @@
         .control-all {
           margin-top: -280px;
         }*/
-        .container {
+        .contain{
           background-color: blueviolet;
           width: 100%;
+          height: 45px;
        display: flex;
           align-items: center;
         justify-content: space-between;
         position: fixed;
+        z-index: 2;
         }
         /*control icon*/
         .lynn {
@@ -125,8 +127,10 @@ transform: translateX(50%);
          display: flex;
          justify-content: center;
          font-size: 26px;
-         font-family: Times new roman;
-         border-block-end-width: 10px solid blue;
+text-shadow: 3px 2px 1px black;
+         font-weight: bold;
+         color: white;
+         font-family: Courier;
        }
        /*seting img*/
        #conimg {
@@ -138,11 +142,11 @@ transform: translateX(50%);
          height: 200px;
          width: 200px;
          border-radius: 10px;
-         box-shadow: 2px 2px 2px rgb(225,76,220);
+         box-shadow: 2px 2px 2px rgb(0,0,0.1);
        }
        .desc {
          font-size: 15px;
-         font-family: Times new roman;
+         font-family: Courier;
          margin: 30px 0 0 10px;
        }
        .tail {
@@ -153,13 +157,63 @@ transform: translateX(50%);
          background-color: lavender;
          padding: 100px 0 400px 0;
        }
+       /*control blog*/
+       .con-blog {
+         display: flex;
+         justify-content: center;
+       }
+       #myblog {
+         margin: 120px 0 0 0;
+         font-size: 20px;
+         color: white;
+         text-shadow: 3px 2px 1px black;
+         font-weight: bold;
+         font-family: Courier;
+       }
+       /*control img-blog and styling*/
+       .rulezblog {
+         display: flex;
+         justify-content: center;
+         margin: 50px 0 0 0;
+       }
+ /*pengatur box white*/ 
+       .launch {
+         border: 1px solid transparent;
+         padding: 0px 10px 30px 10px;
+         max-width: fit-content;
+         background-color: white;
+         border-radius: 5px;
+         box-shadow:  2px 2px 2px #828282;
+       }
+       /*pengatur gambar*/
+       .lin {
+         width: 185px;
+         height: 185px;
+         border-radius: 5px;
+       }
+       /*pengatur background lavender*/
+       #img-blog {
+        max-width: fit-content;
+         padding: 5px 8px 5px 8px;
+         margin: 40px 0 0 0px;
+         border: 1px solid transparent;
+         border-radius: 5px;
+         display: flex;
+         margin-top: 15px;
+         background-color: lavender;
+       }
+       /*pengatur description-blog*/
+       .description-blog {
+         display: flex;
+         justify-content: center;
+       }
       </style>
       </head>
       <body>
         <!--bagian navbar-->
         <!--control-->
         <div class="control-all">
-       <div class="container">
+       <div class="contain">
        <div id="name">Lullaby23</div>
        <div class="lynn">
 <img src="https://img.icons8.com/metro/ffffff/search.png" class="fuki"/>
@@ -190,15 +244,71 @@ transform: translateX(50%);
 <img src="https://i.ibb.co/xgKkHTP/20240124-204031.jpg" class="zy">
 </div>
 <div class="desc">
- Hello, let me introduce myself as someone who is currently studying in the field of frontend developer, and I hope I can become a skilled web developer. For that reason, I started studying things related to that field
+ Hello, let me introduce myself as someone who is currently studying in the field of frontend developer, and I hope I can become a skilled web developer.For that reason, I started studying things related to that<h3 style="background-color: blueviolet; max-width: fit-content; border-radius: 5px; color: lavender; ">field
+</h3>
  </div>
+ <!--seting blog-->
+ <div class="con-blog">
+   <div id="myblog">
+     My blog
+   </div>
+   </div>
+   <div class="rulezblog">
+   <div class="launch">
+   <div id="img-blog">
+     <img src="https://i.ibb.co/80BMxNv/Screenshot-20240209-194019-Acode.jpg" class="lin">
+<img src="https://i.ibb.co/ss5K0jM/Screenshot-20240210-135810-Acode.jpg" class="lin">
+   </div>
+</div>
+   </div>
+   <div class="description-blog"> jadi ini adalah cara menggunakan css inline</div>
+<div class="rulezblog">
+   <div class="launch">
+   <div id="img-blog">
+     <img src="https://i.ibb.co/80BMxNv/Screenshot-20240209-194019-Acode.jpg" class="lin">
+<img src="https://i.ibb.co/ss5K0jM/Screenshot-20240210-135810-Acode.jpg" class="lin">
+   </div>
+</div>
+   </div>
+   <div class="description-blog"> jadi ini adalah cara menggunakan css inline</div>
+<div class="rulezblog">
+   <div class="launch">
+   <div id="img-blog">
+     <img src="https://i.ibb.co/80BMxNv/Screenshot-20240209-194019-Acode.jpg" class="lin">
+<img src="https://i.ibb.co/ss5K0jM/Screenshot-20240210-135810-Acode.jpg" class="lin">
+   </div>
+</div>
+   </div>
+   <div class="description-blog"> jadi ini adalah cara menggunakan css inline</div>
+<div class="rulezblog">
+   <div class="launch">
+   <div id="img-blog">
+     <img src="https://i.ibb.co/80BMxNv/Screenshot-20240209-194019-Acode.jpg" class="lin">
+<img src="https://i.ibb.co/ss5K0jM/Screenshot-20240210-135810-Acode.jpg" class="lin">
+   </div>
+</div>
+   </div>
+   <div class="description-blog"> jadi ini adalah cara menggunakan css inline</div>
+<div class="rulezblog">
+   <div class="launch">
+   <div id="img-blog">
+     <img src="https://i.ibb.co/80BMxNv/Screenshot-20240209-194019-Acode.jpg" class="lin">
+<img src="https://i.ibb.co/ss5K0jM/Screenshot-20240210-135810-Acode.jpg" class="lin">
+   </div>
+</div>
+   </div>
+   <div class="description-blog"> jadi ini adalah cara menggunakan css inline</div>
+<div class="rulezblog">
+   <div class="launch">
+   <div id="img-blog">
+     <img src="https://i.ibb.co/80BMxNv/Screenshot-20240209-194019-Acode.jpg" class="lin">
+<img src="https://i.ibb.co/ss5K0jM/Screenshot-20240210-135810-Acode.jpg" class="lin">
+   </div>
+</div>
+   </div>
+   <div class="description-blog"> jadi ini adalah cara menggunakan css inline</div>
  </div>
  </div>
  <!--control body end--->
  <!-- control isi my blog-->
- <div id="con-blog">
-   <div id="myblog">
-     
-   </div>
- </div>
-  </body>
+      </body>
