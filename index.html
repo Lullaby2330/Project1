@@ -62,8 +62,10 @@
          transform: translateX(100%);
          position: fixed;
          transition: 0.3 east-in-out;
+         z-index: 2;
        }
-       li {
+       
+      li {
          list-style: none;
          border: 1px solid transparent;
          height: 40px;
@@ -96,13 +98,11 @@ transform: translateX(50%);
         height: 30px;
         width: 30px;
       }
-       li:hover {
+   /*   li:hover {
          background-color: blueviolet;
          color: white;
-       }
-       li:active {
-         color: rgb(225,76,220);
-       }
+       }*/
+      
        ul.seting {
          border: 1px solid transparent;
          justify-content: center;
@@ -136,7 +136,7 @@ text-shadow: 3px 2px 1px black;
        #conimg {
          display: flex;
          justify-content: center;
-         margin: 10px 5px 0 0;
+         margin: 30px 5px 0 0;
        }
        .zy {
          height: 200px;
@@ -155,7 +155,7 @@ text-shadow: 3px 2px 1px black;
        /*control warna*/
        #warna {
          background-color: lavender;
-         padding: 100px 0 400px 0;
+         padding: 100px 0 50px 0;
        }
        /*control blog*/
        .con-blog {
@@ -163,7 +163,7 @@ text-shadow: 3px 2px 1px black;
          justify-content: center;
        }
        #myblog {
-         margin: 120px 0 0 0;
+         margin: 100px 0 0 0;
          font-size: 20px;
          color: white;
          text-shadow: 3px 2px 1px black;
@@ -180,10 +180,11 @@ text-shadow: 3px 2px 1px black;
        .launch {
          border: 1px solid transparent;
          padding: 0px 10px 30px 10px;
-         max-width: fit-content;
+       max-width: fit-content;
          background-color: white;
          border-radius: 5px;
          box-shadow:  2px 2px 2px #828282;
+         width: 390px;
        }
        /*pengatur gambar*/
        .lin {
@@ -206,7 +207,108 @@ text-shadow: 3px 2px 1px black;
        .description-blog {
          display: flex;
          justify-content: center;
+         margin: 30px 0 0 0;
+         font-family: Courier;
        }
+       /*film movi3*/
+       .con-film {
+         display: grid;
+         justify-content: center;
+         margin: 100px 0 0 0;
+       }
+       .film {
+        font-size: 20px;
+         color: white;
+         text-shadow: 3px 2px 1px black;
+         font-weight: bold;
+         font-family: Courier;
+         justify-content: center;
+         display: flex;
+         margin: 30px;
+       }
+       /*style ifrmae*/
+       .if {
+         box-shadow: 4px 4px 3px rgb( 0,5,0.1);
+         margin: 30px 0 0 0;
+       }
+       .ifjon {
+         border-radius: 5px;
+       }
+       /*style portofolio*/
+ .portofolio {
+      margin: 100px 0 0 0;
+      display: grid;
+      justify-content: center;
+       }
+       .port {
+         width: 450px;
+         
+       }
+       .box {
+        font-size: 20px;
+         color: white;
+         text-shadow: 3px 2px 1px black;
+         font-weight: bold;
+         font-family: Courier;
+         justify-content: center;
+         display: flex;
+         margin: 120px;
+       }
+       .boxtwo {
+         border: 1px solid transparent;
+     padding: 5px 10px 5px 10px;
+     border-radius: 5px;
+     background-color: lavender;
+     margin-top: 15px;
+     display: grid;
+     justify-content: center;
+       }
+       .conbox {
+         border: 1px solid transparent;
+         background-color: white;
+         border-radius: 5px;
+     padding: 0px 20px 30px 20px;
+     margin: 0 0 0 0;
+      box-shadow:  2px 2px 2px #828282;
+      width: 390px;
+     display: grid;
+     justify-content: center;
+       }
+       .description-portofolio {
+         display: flex;
+         justify-content: center;
+        font-family: Courier;
+        margin: 30px 0 0 0;
+       }
+       /*styling footer*/
+    #footer>ul>li{
+         display: flex;
+         justify-content: center;
+         
+       }
+       #con-icon {
+         margin: 5px 0 0 0;
+         display: flex;
+         justify-content: center;
+         padding: 0 10px 0 10px;
+       }
+       #footer {
+         background-color: black;
+         padding: 10px 0 20px 0;
+       }
+       /*nyoba responsive*/
+       @media only screen and (min-width: 650px)
+  {
+    .res {
+      display: flex;
+      justify-content: space-between;
+    }
+    .restwo {
+justify-content: center;
+      display: flex;
+    flex-wrap: wrap;
+    }
+  }
       </style>
       </head>
       <body>
@@ -253,62 +355,177 @@ text-shadow: 3px 2px 1px black;
      My blog
    </div>
    </div>
+   <!--class untuk responsive-->
+   <div class="res">
+     <div class="restwo">
    <div class="rulezblog">
    <div class="launch">
    <div id="img-blog">
      <img src="https://i.ibb.co/80BMxNv/Screenshot-20240209-194019-Acode.jpg" class="lin">
 <img src="https://i.ibb.co/ss5K0jM/Screenshot-20240210-135810-Acode.jpg" class="lin">
    </div>
+<div class="description-blog"> jadi ini adalah cara menggunakan css inline atau di sebut juga penggabungan style di dalam atribute,Manfaat Internal CSS yaitu: Perubahan pada CSS Internal hanya berlaku pada satu halaman saja.
+Anda tidak perlu melakukan beberapa upload file karena HTML dan CSS berada dalam satu file.
+Class dan ID bisa digunakan oleh internal stylesheet.
+Kekurangan CSS Internal adalah :
+Tidak efisien apabila Anda ingin menggunakan CSS yang sama dalam beberapa file.
+Membuat performa website lebih lemot. Sebab, CSS yang berbeda-beda akan mengakibatkan pemuatan ulang setiap kali Anda mengganti halaman website. 
+
+</div>
 </div>
    </div>
-   <div class="description-blog"> jadi ini adalah cara menggunakan css inline</div>
+   <!--content myblog2-->
 <div class="rulezblog">
    <div class="launch">
    <div id="img-blog">
      <img src="https://i.ibb.co/80BMxNv/Screenshot-20240209-194019-Acode.jpg" class="lin">
 <img src="https://i.ibb.co/ss5K0jM/Screenshot-20240210-135810-Acode.jpg" class="lin">
    </div>
+<div class="description-blog"> jadi ini adalah cara menggunakan css inline atau di sebut juga penggabungan style di dalam atribute,Manfaat Internal CSS yaitu: Perubahan pada CSS Internal hanya berlaku pada satu halaman saja.
+Anda tidak perlu melakukan beberapa upload file karena HTML dan CSS berada dalam satu file.
+Class dan ID bisa digunakan oleh internal stylesheet.
+Kekurangan CSS Internal adalah :
+Tidak efisien apabila Anda ingin menggunakan CSS yang sama dalam beberapa file.
+Membuat performa website lebih lemot. Sebab, CSS yang berbeda-beda akan mengakibatkan pemuatan ulang setiap kali Anda mengganti halaman website. 
+
+</div>
 </div>
    </div>
-   <div class="description-blog"> jadi ini adalah cara menggunakan css inline</div>
+   <!--content myblog 3-->
 <div class="rulezblog">
    <div class="launch">
    <div id="img-blog">
      <img src="https://i.ibb.co/80BMxNv/Screenshot-20240209-194019-Acode.jpg" class="lin">
 <img src="https://i.ibb.co/ss5K0jM/Screenshot-20240210-135810-Acode.jpg" class="lin">
    </div>
+<div class="description-blog"> jadi ini adalah cara menggunakan css inline atau di sebut juga penggabungan style di dalam atribute,Manfaat Internal CSS yaitu: Perubahan pada CSS Internal hanya berlaku pada satu halaman saja.
+Anda tidak perlu melakukan beberapa upload file karena HTML dan CSS berada dalam satu file.
+Class dan ID bisa digunakan oleh internal stylesheet.
+Kekurangan CSS Internal adalah :
+Tidak efisien apabila Anda ingin menggunakan CSS yang sama dalam beberapa file.
+Membuat performa website lebih lemot. Sebab, CSS yang berbeda-beda akan mengakibatkan pemuatan ulang setiap kali Anda mengganti halaman website. 
+
+</div>
 </div>
    </div>
-   <div class="description-blog"> jadi ini adalah cara menggunakan css inline</div>
+   <!--content my blog 4-->
 <div class="rulezblog">
    <div class="launch">
    <div id="img-blog">
      <img src="https://i.ibb.co/80BMxNv/Screenshot-20240209-194019-Acode.jpg" class="lin">
 <img src="https://i.ibb.co/ss5K0jM/Screenshot-20240210-135810-Acode.jpg" class="lin">
    </div>
+<div class="description-blog"> jadi ini adalah cara menggunakan css inline atau di sebut juga penggabungan style di dalam atribute,Manfaat Internal CSS yaitu: Perubahan pada CSS Internal hanya berlaku pada satu halaman saja.
+Anda tidak perlu melakukan beberapa upload file karena HTML dan CSS berada dalam satu file.
+Class dan ID bisa digunakan oleh internal stylesheet.
+Kekurangan CSS Internal adalah :
+Tidak efisien apabila Anda ingin menggunakan CSS yang sama dalam beberapa file.
+Membuat performa website lebih lemot. Sebab, CSS yang berbeda-beda akan mengakibatkan pemuatan ulang setiap kali Anda mengganti halaman website. 
+
+</div>
 </div>
    </div>
-   <div class="description-blog"> jadi ini adalah cara menggunakan css inline</div>
+   <!--content my blog 5-->
 <div class="rulezblog">
    <div class="launch">
    <div id="img-blog">
      <img src="https://i.ibb.co/80BMxNv/Screenshot-20240209-194019-Acode.jpg" class="lin">
 <img src="https://i.ibb.co/ss5K0jM/Screenshot-20240210-135810-Acode.jpg" class="lin">
    </div>
+<div class="description-blog"> jadi ini adalah cara menggunakan css inline atau di sebut juga penggabungan style di dalam atribute,Manfaat Internal CSS yaitu: Perubahan pada CSS Internal hanya berlaku pada satu halaman saja.
+Anda tidak perlu melakukan beberapa upload file karena HTML dan CSS berada dalam satu file.
+Class dan ID bisa digunakan oleh internal stylesheet.
+Kekurangan CSS Internal adalah :
+Tidak efisien apabila Anda ingin menggunakan CSS yang sama dalam beberapa file.
+Membuat performa website lebih lemot. Sebab, CSS yang berbeda-beda akan mengakibatkan pemuatan ulang setiap kali Anda mengganti halaman website. 
+
+</div>
 </div>
    </div>
-   <div class="description-blog"> jadi ini adalah cara menggunakan css inline</div>
+   <!--content my blog 6-->
 <div class="rulezblog">
    <div class="launch">
    <div id="img-blog">
      <img src="https://i.ibb.co/80BMxNv/Screenshot-20240209-194019-Acode.jpg" class="lin">
 <img src="https://i.ibb.co/ss5K0jM/Screenshot-20240210-135810-Acode.jpg" class="lin">
    </div>
+<div class="description-blog"> jadi ini adalah cara menggunakan css inline atau di sebut juga penggabungan style di dalam atribute,Manfaat Internal CSS yaitu: Perubahan pada CSS Internal hanya berlaku pada satu halaman saja.
+Anda tidak perlu melakukan beberapa upload file karena HTML dan CSS berada dalam satu file.
+Class dan ID bisa digunakan oleh internal stylesheet.
+Kekurangan CSS Internal adalah :
+Tidak efisien apabila Anda ingin menggunakan CSS yang sama dalam beberapa file.
+Membuat performa website lebih lemot. Sebab, CSS yang berbeda-beda akan mengakibatkan pemuatan ulang setiap kali Anda mengganti halaman website. 
+
+</div>
 </div>
    </div>
-   <div class="description-blog"> jadi ini adalah cara menggunakan css inline</div>
+   </div>
+   </div>
+   <!--class responsive berakhir-->
+     <!--iframe dimulai-->
+   <div class="con-film">
+     <div class="film">
+       Film Movie
+     </div>
+     <div class="if">
+<Iframe width="390" height="200" src="https://www.youtube.com/embed/v7uzRSCJLZ4?si=q-S0ZeJkYj6Xna12" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="ifjon" allowfullscreen>
+    </iframe>
+</div>
+<!--content film movie 2-->
+     <div class="if">
+<Iframe width="390" height="200" src="https://www.youtube.com/embed/v7uzRSCJLZ4?si=q-S0ZeJkYj6Xna12" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="ifjon" allowfullscreen>
+    </iframe>
+</div>
+<!--content film movie 3-->
+     <div class="if">
+<Iframe width="390" height="200" src="https://www.youtube.com/embed/v7uzRSCJLZ4?si=q-S0ZeJkYj6Xna12" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="ifjon" allowfullscreen>
+    </iframe>
+</div>
+<!--content film movie 4-->
+     <div class="if">
+<Iframe width="390" height="200" src="https://www.youtube.com/embed/v7uzRSCJLZ4?si=q-S0ZeJkYj6Xna12" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="ifjon" allowfullscreen>
+    </iframe>
+</div>
+<!--content film movie 5-->
+     <div class="if">
+<Iframe width="390" height="200" src="https://www.youtube.com/embed/v7uzRSCJLZ4?si=q-S0ZeJkYj6Xna12" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="ifjon" allowfullscreen>
+    </iframe>
+</div>
+<!--content film movie 6-->
+     <div class="if">
+<Iframe width="390" height="200" src="https://www.youtube.com/embed/v7uzRSCJLZ4?si=q-S0ZeJkYj6Xna12" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="ifjon" allowfullscreen>
+    </iframe>
+</div>
+   </div>
+   <!--styling Portofolio dimulai-->
+   <div class="box">
+     Portofolio
+     </div>
+<div class="Portofolio">
+ <div class="ikeh">
+     <div class="conbox">
+     <div class="boxtwo">
+      <img src="https://i.ibb.co/xhhnrn5/Screenshot-20240211-172706-Chrome.jpg" class="port">
+     </div>
+     <div class="description-portofolio"> Jadi ini adalah project pertama saya yaitu membuat web portofio sederhana hanya dengan menggunakan html dan css saja,
+     kurang lebih pengerja'an sekitar 3 bulan. di karnakan di satu sisi saya harus bekerja menjadi sebagai karyawan,
+     lalu setiap ada waktu senggang saya selalu meluangan kan waktu untuk meneruskan project portofolio tersebut. meskipun tidak semulus air yang mengalir namun sedikit demi sedikit saya yakin akan bisa mengerjakan project tersebut,
+     dan pada akhir nya selesai pada bulan januari.
+     </div>
+     </div>
+     </div>
+   </div>
+<!--control body end--->
  </div>
- </div>
- <!--control body end--->
  <!-- control isi my blog-->
+ <!--style footer-->
+ <div id="footer">
+   <div id="con-icon">
+     <img width="70" height="0" src="https://img.icons8.com/bubbles/190/github.png"/>
+     <img width="70" height="80" src="https://img.icons8.com/bubbles/190/000000/whatsapp.png"/>
+     <img width="70" height="70" src="https://img.icons8.com/bubbles/190/facebook-new.png" />
+     <img width="70" height="70" src="https://img.icons8.com/bubbles/190/instagram-new--v1.png" alt="/>
+<img width="50" height="50" src="https://img.icons8.com/bubbles/190/gmail.png"/>
+   </div>
+ </div>
       </body>
