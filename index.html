@@ -64,7 +64,10 @@
          transition: 0.3 east-in-out;
          z-index: 2;
        }
-       
+       .tut {
+         display: grid;
+         justify-content: center;
+       }
       li {
          list-style: none;
          border: 1px solid transparent;
@@ -79,16 +82,19 @@
        }
 
       .tombol {
-      top: -1px;
+      top: 8px;
         position: fixed;
-        margin: 0 0 0 130px;
+        left: 48%;
+        transform: translateX(-50%);
       }
       #iya {
        position: fixed;
        z-index: 5;
     right: 0;
-    top: 20px;
-    opacity: 0;
+    top: 15px;
+   /* opacity: 0;*/
+   width: 20px;
+   height: 20px;
       }
       #iya:checked +
       #menubar{
@@ -103,11 +109,11 @@ transform: translateX(50%);
          color: white;
        }
       
-       ul.seting {
+      ul.seting {
          border: 1px solid transparent;
          justify-content: center;
          position: absolute;
-         left: 50px;
+         left: 40px;
          display: grid;
          border-radius: 10px;
          top: 20%;
@@ -226,6 +232,7 @@ text-shadow: 3px 2px 1px black;
          display: flex;
          margin: 30px;
        }
+  
        /*style ifrmae*/
        .if {
          box-shadow: 4px 4px 3px rgb( 0,5,0.1);
@@ -242,7 +249,6 @@ text-shadow: 3px 2px 1px black;
        }
        .port {
          width: 450px;
-         
        }
        #box {
         font-size: 20px;
@@ -286,24 +292,41 @@ text-shadow: 3px 2px 1px black;
         margin: 30px 0 0 0;
        }
        /*styling footer*/
-    #footer>ul>li{
-         display: flex;
+    
+       .cop {
+         font-size: 10px;
+         color: white;
+         text-shadow: 3px 2px 1px black;
+         font-weight: bold;
+         font-family: Courier;
          justify-content: center;
-         
+         display: flex;
+         margin: 15px 0 0 0;
        }
        #con-icon {
-         margin: 5px 0 0 0;
          display: flex;
-         justify-content: center;
-         padding: 0 10px 0 10px;
+      justify-content: space-between;
+        padding: 0 10px 0 10px;
        }
        #footer {
          background-color: black;
-         padding: 10px 0 20px 0;
+         padding: 10px 0 10px 0;
        }
-       /*nyoba responsive*/
+       /*responsive tablet*/
        @media only screen and (min-width: 650px)
   {
+       .description-portofolio {
+         display: flex;
+         justify-content: center;
+        font-family: Courier;
+        margin: 30px 0 0 0;
+        color: blue;
+       }
+       .seting {
+         display: flex;
+         justify-content: center;
+         margin: 0 0 0 80px;
+       }
     .res {
       display: flex;
       justify-content: space-between;
@@ -314,6 +337,65 @@ justify-content: center;
     flex-wrap: wrap;
     }
   }
+  @media only screen and (max-width: 400px)
+  {
+   #name {
+     color: white;
+     font-size: 100%;
+   }
+   .fuki {
+     width: 25px;
+     height: 25px;
+   }
+   .jull {
+     width: 25px;
+     height: 25px;
+   }
+   ul.seting {
+     left: 50px;
+   }
+   .seting>li {
+    width: 110%;
+    height: 50%;
+    font-size: 15px;
+   }
+   #home {
+     font-size: 25px;
+   }
+  .zy {
+    width: 150px;
+    height: 150px;
+  }
+ .restwo {
+   width: 300px;
+ }
+ .lin {
+   width: 50%;
+ }
+       .rulezblog {
+        position: relative;
+         margin: 0 0 0 0;
+       }
+       .con-blog {
+         display: flex;
+         justify-content: center;
+       }
+
+       .ifjon {
+         width: 275px;
+       }
+       .conbox {
+         width: 300px;
+       }
+       .cop {
+         font-size: 5px;
+       }
+  }
+  @media only screnn and (min-width: 400px)
+  {
+    
+  }
+  
       </style>
       </head>
       <body>
@@ -331,6 +413,7 @@ justify-content: center;
 <input type="checkbox" id="iya">
 <!--bagian menu-->
        <div id="menubar">
+      <div class="tut">
          <ul class="seting">
            <div class="tombol"><img src="https://img.icons8.com/laces/64/blue/x.png" class="rull"/>
            </div>
@@ -339,6 +422,7 @@ justify-content: center;
            <li class="tiga"><a href="#film">Film movie</a></li>
            <li claas="empat"><a href="#box">Portofolio</a></li>
          </ul>
+         </div>
        </div>
        <!--home-->
          <!--control color-->
@@ -473,7 +557,7 @@ Membuat performa website lebih lemot. Sebab, CSS yang berbeda-beda akan mengakib
        Film Movie
      </div>
      <div class="if">
-<Iframe width="390" height="200" src="https://www.youtube.com/embed/v7uzRSCJLZ4?si=q-S0ZeJkYj6Xna12" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="ifjon" allowfullscreen>
+<Iframe src="https://www.youtube.com/embed/v7uzRSCJLZ4?si=q-S0ZeJkYj6Xna12" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="ifjon" allowfullscreen>
     </iframe>
 </div>
 <!--content film movie 2-->
@@ -526,11 +610,14 @@ Membuat performa website lebih lemot. Sebab, CSS yang berbeda-beda akan mengakib
  <!--style footer-->
  <div id="footer">
    <div id="con-icon">
-     <img width="70" height="0" src="https://img.icons8.com/bubbles/190/github.png"/>
-     <img width="70" height="80" src="https://img.icons8.com/bubbles/190/000000/whatsapp.png"/>
-     <img width="70" height="70" src="https://img.icons8.com/bubbles/190/facebook-new.png" />
-     <img width="70" height="70" src="https://img.icons8.com/bubbles/190/instagram-new--v1.png" alt="/>
-<img width="50" height="50" src="https://img.icons8.com/bubbles/190/gmail.png"/>
+   <a href="https://github.com/Lullaby2330/Lullaby2330"><img width="40" height="40" src="https://img.icons8.com/bubbles/190/github.png"/></a>
+   <a href="https://api.whatsapp.com/send?phone=6288210620351&text=hallo,apakah anda yang membuat web portofolio?"> <img width="40" height="40" src="https://img.icons8.com/bubbles/190/000000/whatsapp.png"/></a>
+   <a href="https://www.facebook.com/panzerox.panzerox"><img width="40" height="40" src="https://img.icons8.com/bubbles/190/facebook-new.png" /></a>
+  <img width="40" height="40" src="https://img.icons8.com/bubbles/190/instagram-new--v1.png"/>
+  
+   </div>
+   <div class="cop">
+&copy; 2024 situs Website portofolio saya. dilindungi hak cipta.
    </div>
  </div>
-    </body>
+                                   </body>
